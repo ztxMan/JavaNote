@@ -1,0 +1,31 @@
+Java 语言特性
+  注解
+
+  元注解  -- 注解上面的注解
+
+  1.@Target()     如不进行注明 可使用在任何位置
+         -- // @Link java.lang.annotation
+
+  2.@Retention()   保留级别
+
+         -- //@ java.lang.annotation.RetentionPolicy
+      SOURCE  -- 源码阶段  --> APT 注解处理器运行在编译阶段
+          |
+          |
+          |
+          | 自定义注解处理器   ？extends AbstractProcessor
+
+
+
+
+      CLASS   -- class 文件
+      RUNTIME -- 运行阶段，利用反射获取注解
+
+      * SOURCE < CLASS < RUNTIME
+        应用场景：
+
+
+
+
+
+  参数  -- 注解中的参数
