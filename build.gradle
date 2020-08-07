@@ -9,6 +9,12 @@ repositories {
     mavenCentral()
 }
 
+sourceCompatibility = "8"
+targetCompatibility = "8"
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'//引入自动生成注解配置信息的库
+    // Adds libraries defining annotations to only the compile classpath.
+    compile 'com.squareup:javapoet:1.7.0'//引入生成代码的库(要不我们需要自己拼接字符串，容易出错)
 }
