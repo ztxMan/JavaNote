@@ -1,10 +1,8 @@
 package www.ztxbibibi.com.JVM;
 
-/**
- * é€ƒé€¸åˆ†æœŸæµ‹è¯•ï¼ˆæ ‡é‡æ›¿æ¢ï¼ŒåŒæ­¥æ¶ˆé™¤ï¼‰
- * å¯¹è±¡çš„æ ˆä¸Šåˆ†é…ï¼Œå‡å°‘GCå›žæ”¶ï¼Œæé«˜æ•ˆçŽ‡
- */
 
+//ÌÓÒÝ·ÖÎö²âÊÔ£¨±êÁ¿Ìæ»»£¬Í¬²½Ïû³ý£©
+//¶ÔÏóµÄÕ»ÉÏ·ÖÅä£¬¼õÉÙGC»ØÊÕ£¬Ìá¸ßÐ§ÂÊ
 public class EscapeAnalysisTest {
 
 
