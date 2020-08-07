@@ -5,9 +5,15 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.CLASS)
-public @interface AndroidSdkVersion {
+import static www.ztxbibibi.com.Annotation.AndroidSdk.L;
+import static www.ztxbibibi.com.Annotation.AndroidSdk.O;
 
-    String value() ;
+
+@Target({ElementType.TYPE,ElementType.PARAMETER,ElementType.FIELD})
+@Retention(RetentionPolicy.SOURCE)
+@IntDef({L, O})
+public @interface AndroidSdkVersion {
+    int value() default 0;
+
+
 }
